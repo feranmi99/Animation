@@ -1,0 +1,159 @@
+.background {
+    background: url(image/city.jpg);
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+    position: relative;
+    background-size: contain;
+    overflow-y: hidden;
+}
+html,body {background-color: lightgray;
+    margin: 0px auto;
+    padding: 0px auto;
+    overflow-y: hidden;
+    overflow-x:hidden ;
+ }
+ .bird {
+    position: fixed;
+    z-index: 99;
+} 
+.chopper {
+    position: absolute;
+    z-index: 20;
+    animation-name: chopper;
+    animation-duration: 5s;
+    right: 0px;
+    margin-right: -500px;
+    animation-direction: reverse;
+    animation-iteration-count: infinite;
+    animation-timing-function:linear ;
+    float: right;
+}
+@keyframes chopper{
+    0% {
+        right: 0px;
+        transform: translateX(-2500px);
+    }
+    100% {
+        /* margin-right:-100px; */
+    }
+}
+.chopper2 {
+    position: absolute;
+    z-index: 10;
+    animation-name: chopper2;
+    animation-duration: 8s;
+    /* animation-delay: 2s; */
+    animation-iteration-count: infinite;
+    animation-timing-function:linear ;
+    float: right;
+    animation-direction: reverse;
+    border: 1px solid red;  
+}
+@keyframes chopper2{
+    0% {
+        right: 2000px;
+        transform: translateX(-2500px);
+    }
+    100% {
+        margin-right:0px;
+    }
+}
+.worker {
+    position: relative;
+    top: 450px;
+    animation-name: worker;
+    animation-duration: 15s;
+    /* animation-delay: 2s; */
+    animation-iteration-count: infinite;
+    animation-timing-function:linear ;
+}
+@keyframes worker{
+    0% {
+        margin-right: 0px;
+    }
+    100% {
+        margin-left:1800px;
+    }
+}
+.runner {
+    position: relative;
+    top: 300px;
+    z-index: 30;
+    animation-name:runner;
+    animation-duration: 3s;
+    /* animation-delay: 2s; */
+    animation-iteration-count: infinite;
+    animation-timing-function:linear ;
+    animation-direction: reverse;
+}
+@keyframes runner{
+    0% {
+        margin-left: 1800px;
+    }
+    100% {
+        margin-right:0px;
+    }
+}
+.lanbo{
+    position: relative;
+    top: 70px;
+    z-index: 20;
+    animation-name: lanbo;
+    animation-duration: 2s;
+    /* animation-delay: 2s; */
+    animation-iteration-count: infinite;
+    animation-timing-function:linear ;
+    animation-direction: reverse;
+}
+@keyframes lanbo{
+    0% {
+        margin-left: 1900px;
+    }
+    100% {
+        margin-right:0px;
+    }
+}
+.motor{
+    position: relative;
+    z-index: 10;
+    top: -200px;
+    animation-name: motor;
+    animation-duration: 7s;
+    /* animation-delay: 2s; */
+    animation-iteration-count: infinite;
+    animation-timing-function:linear ;
+    animation-direction: reverse;
+    float: right;
+}
+@keyframes motor{
+    0% {
+        right: 0px;
+        transform: translateX(-2500px);
+    }
+    100% {
+        /* margin-right:1900px; */
+    }
+}
+.run{
+    position: relative;
+    z-index: 10;
+    /* top: 200px; */
+    animation-name: run;
+    animation-duration: 7s;
+    /* animation-delay: 2s; */
+    animation-iteration-count: infinite;
+    animation-timing-function:linear ;
+    animation-direction: reverse;
+    float: right;
+}
+@keyframes rum{
+    0% {
+        right: 0px;
+        transform: translateX(-2500px);
+    }
+    100% {
+        /* margin-right:1900px; */
+    }
+}
+
